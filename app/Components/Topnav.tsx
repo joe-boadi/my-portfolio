@@ -1,6 +1,7 @@
 export default function Topnav(){
     return (
         <div>
+            <header>joe-boadi</header>
             <nav className="bg-slate-800 p-4">
             {/*TODO*/}
             {/*Portfolio Logo */}
