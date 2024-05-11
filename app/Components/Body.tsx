@@ -1,4 +1,5 @@
-export default function MainBody(){
+export default function MainBody() {
+    
     return(
         <>
         {/* Display grid containers for project */}
