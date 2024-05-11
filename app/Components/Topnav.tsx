@@ -1,17 +1,15 @@
 export default function Topnav(){
     return (
         <div>
-            <header>joe-boadi</header>
-            <nav className="bg-slate-800 p-4">
+            <nav className="bg-base-200 text-sm p-2 m-0">
+            <h1 className="text-lg font-extrabold">joe-boadi</h1>
             {/*TODO*/}
             {/*Portfolio Logo */}
-                <div>
-                    {/*TODO*/}
-                    {/* Page Links goes here*/}
-                    <a href="/" target="" rel="noopener noreferrer">Home</a>
-                    <a href="/" target="" rel="noopener noreferrer">Profile</a>
-                    <a href="/" target="" rel="noopener noreferrer">Project</a>
-                    <a href="/" target="" rel="noopener noreferrer">Contact</a>
+                <div className="m-2 p-1 justify-center">
+                    <a className="m-2" href="/" target="" rel="noopener noreferrer">Home</a>
+                    <a className="m-2" href="/" target="" rel="noopener noreferrer">Profile</a>
+                    <a className="m-2" href="/" target="" rel="noopener noreferrer">Project</a>
+                    <a className="m-2" href="/" target="" rel="noopener noreferrer">Contact</a>
                 </div>
            </nav>
         </div>
