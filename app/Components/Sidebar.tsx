@@ -2,14 +2,9 @@ import Image from "next/image"
 import {BsBuildingFill} from "react-icons/bs"
 import { GrLocationPin } from "react-icons/gr";
 import { RiTwitterXFill } from "react-icons/ri"
+import HireMe from "./HireMe";
 
 
-{/*TODO*/}
-{/**
-    Function to handle hire me button 
-    const onHireMe = () => {
-    }
-*/}
 
 export default function Sidebar() {
     return(
@@ -31,16 +26,13 @@ export default function Sidebar() {
                     Computer Sci. & Eng. || Technology & Security || Ex-Allied Health
                 </p>
             </div>
-            <button className="bg-base-200 text-neutral-content w-24 m-2 p-2 rounded-lg hover:bg-base-100 ease-in-out">Hire Me</button>
+            <button className="bg-base-200 text-neutral-content w-24 m-2 p-2 rounded-lg hover:bg-base-100 ease-in-out" onClick={HireMe}>Hire Me</button>
             {/*Experience, Location, status & "Hire me" button*/}
             <div className="m-0 p-1 text-sm">
                 <BsBuildingFill/> <p>Software Developer / AI</p>
                 <GrLocationPin/> <p>Ghana</p>
                 <RiTwitterXFill /> <p>joe-boadi/X</p>
-
             </div>
-            {/* Social links*/}
-            <div></div>
         </div>
     )
  
