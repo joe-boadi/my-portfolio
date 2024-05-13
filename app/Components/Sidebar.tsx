@@ -1,17 +1,15 @@
 import Image from "next/image"
 import {BsBuildingFill} from "react-icons/bs"
-import { GrLocationPin } from "react-icons/gr";
-import { RiTwitterXFill } from "react-icons/ri"
-import HireMe from "./HireMe";
-
-
+import { GrLocationPin } from "react-icons/gr"
+import { RiGithubFill, RiLinkedinFill, RiTwitterXFill } from "react-icons/ri"
+import HireMe from "./HireMe"
+import IconLinks from "../utils/Iconslink"
 
 export default function Sidebar() {
     return(
-        <div className="bg-base-100 p-8 text-base-content display-flex">
+        <div className="bg-base-100 p-8 text-base-content">
             {/*TODO*/}
-            {/* Profile picture/Hero Image with  */}
-                
+            {/* Profile picture/Hero Image*/}
             <div>
                 <Image
                         className="rounded-full border-bg-accent m-4 p-2 w-24"
@@ -26,14 +24,11 @@ export default function Sidebar() {
                     Computer Sci. & Eng. || Technology & Security || Ex-Allied Health
                 </p>
             </div>
-            <button className="bg-base-200 text-neutral-content w-24 m-2 p-2 rounded-lg hover:bg-base-100 ease-in-out" onClick={HireMe}>Hire Me</button>
+            <button className="btn btn-outline btn-wide glass text-sm m-2 p-2 rounded-lg">Hire Me</button>
             {/*Experience, Location, status & "Hire me" button*/}
             <div className="m-0 p-1 text-sm">
-                <BsBuildingFill/> <p>Software Developer / AI</p>
-                <GrLocationPin/> <p>Ghana</p>
-                <RiTwitterXFill /> <p>joe-boadi/X</p>
+                <IconLinks />
             </div>
         </div>
     )
- 
 }
