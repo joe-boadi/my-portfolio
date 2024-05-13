@@ -39,18 +39,6 @@ const iconLinks: IconLink[] = [
   },
 ];
 
-// // Component to render each icon link
-// const IconLinkItem = ({ icon, link, name }: IconLink) => (
-//   <div className="m-0 p-1 text-sm">
-//     <Link href={link}>
-//       <div className="flex items-center">
-//         {icon}
-//         <span className="ml-2">{name}</span>
-//       </div>
-//     </Link>
-//   </div>
-// );
-
 // Component to render all icon links
 const IconLinks = () => (
     <>
