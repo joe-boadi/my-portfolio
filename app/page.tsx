@@ -1,11 +1,11 @@
 import Sidebar from "./Components/Sidebar";
-import Topnav from "./Components/Topnav";
+import NavLinks from "./Components/NavLinks";
 import Body from "./Components/Body";
 
 export default function Home() {
   return (
     <main >
-      <Topnav />
+      <NavLinks />
       <Sidebar />
       <Body />
     </main>
