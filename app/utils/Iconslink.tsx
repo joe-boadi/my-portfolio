@@ -79,7 +79,7 @@ const IconLinks = () => (
               <Link key={index} href={item.link}>
                 <div className="flex p-1">
                   {item.icon}
-                  {/* <span className="ml-2">{item.name}</span> */}
+                  <span className="ml-2">{item.name}</span>
                 </div>
               </Link>
             );
