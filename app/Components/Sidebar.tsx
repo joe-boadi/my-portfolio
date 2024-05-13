@@ -7,7 +7,7 @@ export default function Sidebar() {
             <div className="max-w-md mb-4">
                 <div>
                     <div className="avatar rounded-badge">
-                        <div className="rounded-sm border-bg-accent m-4 p-2 w-24">
+                        <div className="rounded-lg border-bg-accent m-4 p-2 w-24">
                             <Image
                                 // className="rounded-sm border-bg-accent m-4 p-2 w-24"
                                 src="/images/KBM-headshot.jpg"
@@ -19,11 +19,11 @@ export default function Sidebar() {
                         </div>
                     </div>
                     <h2 className="text-lg font-semibold">Kwadjo Boadi</h2>
-                    <h3 className="text-slate-400">joe-boadi - he/him</h3>
-                    <p className="text-sm">
+                    <h3 className="text-slate-400 text-sm">joe-boadi - he/him</h3>
+                    <p className="text-xs">
                         Computer Sci. & Eng. || Technology & Security || Ex-Allied Health
                     </p>
-                    <button className="btn btn-outline btn-wide glass text-sm m-2 p-2 rounded-lg">Hire Me</button>
+                    <button className="btn btn-outline btn-wide btn-sm text-xs m-2 p-2 rounded-lg">Hire Me</button>
                 </div>
                 {/*Experience, Location, status & "Hire me" button*/}
                 <div className="m-0 p-1 text-sm">
