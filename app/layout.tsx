@@ -5,8 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Generated with next",
+  title: "joe-boadi's Portfolio",
+  description: "A portfolio website for Kwadjo Boadi",
+  // themeColor: "#000000",
+  icons: "/images/KBM-cartoon.jpg",
 };
 
 export default function RootLayout({
