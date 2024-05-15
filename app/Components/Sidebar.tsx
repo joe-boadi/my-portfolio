@@ -3,7 +3,7 @@ import IconLinks from "../utils/Iconslink"
 
 export default function Sidebar() {
     return(
-        <aside className="left-0 m-3 p-2 flex flex-col w-1/3 bg-base-100 text-base-content items-centers justify-center">
+        <aside className="left-0 m-3 p-2 flex flex-col w-1/3 bg-base-100 text-base-content items-centers justify-center font-mono">
             <div className="mb-4">
                 <div>
                     <div className="avatar">

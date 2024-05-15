@@ -1,15 +1,17 @@
 import Sidebar from "./Components/Sidebar";
 import NavLinks from "./Components/NavLinks";
 import Body from "./Components/Body";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 export default function Home() {
   return (
-    <main className="h-screen font-mono">
-      <NavLinks />
-      <div className="grid grid-cols-2">
+    <body>
+        <NavLinks />
         <Sidebar />
         <Body />
-      </div>
-    </main>
+        <Contact />
+        <Footer />
+    </body>
   );
 }

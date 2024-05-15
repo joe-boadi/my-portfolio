@@ -6,7 +6,7 @@ export default function MainBody() {
     return(
         <>
         {/* Display grid containers for project */}
-           <div className="w-2/3 right-0 m-1 p-2">
+           <div className="w-2/3 right-0 m-1 p-2 font-mono">
                 <section>
                     <h1 className="text-3xl p-2 m-2"> My Portfolio </h1>
                     <div className="flex outline rounded-lg m-4 p-3">
