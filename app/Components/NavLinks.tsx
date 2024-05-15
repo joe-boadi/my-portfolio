@@ -14,18 +14,18 @@ const navLinks: NavLink[] = [
 
 const NavLinks = () => {
   return (
-    <header className="sticky m-2 p-3 flex justify-between items-center">
-        <div className="flex">
+    <nav className="navbar bg-base-300 top-0 fixed m-2 p-3 justify-between items-center font-mono">
+        <header className="flex">
           <h1 className="left-0 font-extrabold text-xl">joe-boadi</h1>
-        </div>
-        <nav className="flex justify-center text-sm">
+        </header>
+        <nav className="flex justify-center text-sm right-2">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
               <div className="m-2">{link.label}</div>
             </Link>
           ))}
         </nav>
-    </header>
+    </nav>
   );
 };
 
