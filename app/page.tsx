@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <main className="h-screen font-mono">
       <NavLinks />
-      <Sidebar />
-      <Body />
+      <div className="grid grid-cols-2">
+        <Sidebar />
+        <Body />
+      </div>
     </main>
   );
 }

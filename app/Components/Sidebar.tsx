@@ -3,16 +3,15 @@ import IconLinks from "../utils/Iconslink"
 
 export default function Sidebar() {
     return(
-        <div className="left-0 flex flex-col w-1/3 bg-base-100 p-8 text-base-content items-centers justify-center">
-            <div className="max-w-md mb-4">
+        <aside className="left-0 m-3 p-2 flex flex-col w-1/3 bg-base-100 text-base-content items-centers justify-center">
+            <div className="mb-4">
                 <div>
-                    <div className="avatar rounded-badge">
-                        <div className="rounded-badge border-bg-accent m-4 p-2">
+                    <div className="avatar">
+                        <div className="rounded-lg m-4 p-2">
                             <Image
-                                // className="rounded-sm border-bg-accent m-4 p-2 w-24"
                                 src="/images/KBM-headshot.jpg"
                                 width={150}
-                                height={100}
+                                height={150}
                                 alt="Picture of the author"
                                 priority={false}
                             />
@@ -27,11 +26,10 @@ export default function Sidebar() {
                         <button className="btn btn-outline btn-wide btn-sm text-xs m-2 p-2 rounded-lg">Hire Me</button>
                     </div>
                 </div>
-                {/*Experience, Location, status & "Hire me" button*/}
                 <div className="m-0 p-1 text-sm">
                     <IconLinks />
                 </div>
             </div>
-        </div>
+        </aside>
     )
 }
