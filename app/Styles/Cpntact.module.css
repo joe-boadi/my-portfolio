@@ -1,0 +1,89 @@
+.contactSection{
+	max-width: 100%;
+	padding: 3rem 0 6rem 0;
+	/* background-image: url('../media/gray-google-map.webp'); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+  font-family: monospace;
+}
+
+.contactSection .h2{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.contactSection .span{
+	width: 1rem;
+}
+
+.contactSection::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1));
+	z-index: 1;
+}
+
+.form,.contactSection .h2{
+	position: relative;
+	z-index: 2;
+}
+
+.inputGroup{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 1rem;
+	width:80%;
+}
+
+.input[type="text"], 
+.input[type="email"],
+.textarea{
+	width:100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+  color: white;
+  background-color:#30363d ;
+  font-family: monospace;
+}
+
+.inputGroup input[type="text"],
+.inputGroup input[type="email"]{
+	width: 50%;
+}
+
+.textarea{
+	display: block;
+	height: 100px;
+	resize: none;
+	margin: 0 auto 1rem;
+	width: 80%;
+}
+
+.button{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size:16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: 0 auto 1rem;
+	width: 50%;
+  font-family: monospace;
+}
+
+.button:hover{
+	background-color: #0056b3;
+}
