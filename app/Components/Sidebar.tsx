@@ -3,17 +3,18 @@ import IconLinks from "../utils/Iconslink"
 
 export default function Sidebar() {
     return(
-        <aside className="left-0 m-3 p-2 flex flex-col w-1/3 bg-base-100 text-base-content items-centers justify-center font-mono">
-            <div className="mb-4">
+        <aside className="left-0 mt-16 mx-7 p-2 flex grid-cols-2 w-1/5 bg-base-100 text-base-content items-centers justify-center font-mono">
+            <div>
                 <div>
-                    <div className="avatar">
-                        <div className="rounded-lg m-4 p-2">
+                    <div className="rounded-full overflow-hidden">
+                        <div className="rounded-full m-4 p-2">
                             <Image
                                 src="/images/KBM-headshot.jpg"
                                 width={150}
                                 height={150}
                                 alt="Picture of the author"
                                 priority={false}
+                                className="rounded-full"
                             />
                         </div>
                     </div>
