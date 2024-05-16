@@ -1,7 +1,11 @@
 export default function Footer () {
     return(
-        <footer className="items-center p-4 m-3 justify-center bottom-0 text-center font-mono">
-            <p>Copyright &copy; 2024 Made by <a href="https://github.com/joe-boadi">joe-boadi</a>  |  All Rights Reserved</p>
+        <footer className="footer footer-center bg-base-300 items-center p-4 mt-2 justify-center text-center font-mono">
+            <aside>
+                <small>
+                    <p>Copyright &copy; 2024 Made by <a href="https://github.com/joe-boadi">joe-boadi</a>  |  All Rights Reserved</p>
+                </small>
+            </aside>
         </footer>
     )
 }
