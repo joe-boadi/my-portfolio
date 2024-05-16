@@ -3,7 +3,7 @@ import IconLinks from "../utils/Iconslink"
 
 export default function Sidebar() {
     return(
-        <aside className="left-0 mt-16 mx-7 p-2 flex grid-cols-2 w-1/5 bg-base-100 text-base-content items-centers justify-center font-mono">
+        <aside className="left-0 mt-16 mx-7 p-2 flex mmd:flex-row grid-cols-2 w-1/5 bg-base-100 text-base-content items-centers justify-center font-mono">
             <div>
                 <div>
                     <div className="rounded-full overflow-hidden">
