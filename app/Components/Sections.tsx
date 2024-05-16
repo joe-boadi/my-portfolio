@@ -6,10 +6,10 @@ export default function MainBody() {
     return(
         <>
         {/* Display grid containers for project */}
-           <div className="w-2/3 right-0 m-1 p-2 font-mono">
+           <div className="flex justify-center m-1 p-2 font-mono mx-auto lg:w-4/5 md:w-4/5 ">
                 <section>
-                    <h1 className="text-3xl p-2 m-2"> My Portfolio </h1>
-                    <div className="flex outline rounded-lg m-4 p-3">
+                    <h1 className="text-3xl p-2 m-2 text-center"> My Portfolio </h1>
+                    <div className="flex border rounded-lg m-4 p-3">
                         <p>
                             <span className="font-extrabold text-2xl">👋 Hello, I am Joe</span> <br />
                             A passionate software engineer with nearly a year of professional experience. Armed with a BSc in Computer Science 
@@ -26,17 +26,6 @@ export default function MainBody() {
                             🎹 Beyond the keyboard, I find harmony playing the piano and engage in various extracurricular activities that add color 
                             to life.
                         </p>
-                    </div>
-                </section>
-
-                <section className="m-4 p-3">
-                    <div className="text-3xl p-4 m-2"> <h2>Tools I use</h2> </div>
-                    <div className="outline rounded-lg p-2 m-1">
-                        <div className="">
-                            <div className="flex grid-cols-4 justify-center items-center gap-4 w-full h-full">
-                                <StackIcons />
-                            </div>
-                        </div>
                     </div>
                 </section>
             </div>
