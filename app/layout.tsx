@@ -6,9 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "joe-boadi's Portfolio",
-  description: "A portfolio website for Kwadjo Boadi",
-  // themeColor: "#000000",
-  icons: "/images/joe-logo.png",
+  openGraph: {
+    title: "joe-boadi's Portfolio",
+    description: "A portfolio website for Kwadjo Boadi",
+  },
+  icons: "/joe-logo.png",
 };
 
 export default function RootLayout({
