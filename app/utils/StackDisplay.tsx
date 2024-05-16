@@ -74,7 +74,7 @@ const stackIcons: StackLink[] = [
 const StackIcons = () => {
     return (
         <div className="flex justify-center">
-            <div className="grid lg:grid-cols-5 md:grid-cols-2 lg:w-4/5 md:w-4/5 border rounded-lg m-4 p-2">
+            <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 lg:w-4/5 md:w-4/5 border rounded-lg m-4 p-2">
                 {stackIcons.map((icon, index) => (
                     <div key={index} className="flex justify-center items-center">
                         <div className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16">
