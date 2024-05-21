@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "joe-boadi's Portfolio",
     description: "A portfolio website for Kwadjo Boadi",
   },
-  icons: "/joe-logo.png",
+  icons: "./app/profile.ico",
 };
 
 export default function RootLayout({

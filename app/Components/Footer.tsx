@@ -3,7 +3,7 @@ export default function Footer () {
         <footer className="footer footer-center bg-base-300 items-center p-4 mt-2 justify-center text-center font-mono">
             <aside>
                 <small>
-                    <p>Copyright &copy; 2024 Made by <a href="https://github.com/joe-boadi">joe-boadi</a>  |  All Rights Reserved</p>
+                    <p>Copyright &copy; 2024 Made by <a className="hover:underline" href="https://github.com/joe-boadi">joe-boadi</a>  |  All Rights Reserved</p>
                 </small>
             </aside>
         </footer>

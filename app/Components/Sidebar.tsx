@@ -1,20 +1,20 @@
 import Image from "next/image"
 import IconLinks from "../utils/Iconslink"
 
-export default function Sidebar() {
+const Profile = () => {
     return(
-        <aside className="left-0 mt-16 mx-7 p-2 flex mmd:flex-row grid-cols-2 w-1/5 bg-base-100 text-base-content items-centers justify-center font-mono">
+        <aside className="mt-16 mx-28 p-2 flex grid-cols-2 w-1/5 bg-base-100 text-base-content text-center items-centers justify-center font-mono">
             <div>
                 <div>
-                    <div className="rounded-full overflow-hidden">
-                        <div className="rounded-full m-4 p-2">
+                    <div>
+                        <div className="m-4 p-2">
                             <Image
                                 src="/images/KBM-headshot.jpg"
-                                width={150}
+                                width={210}
                                 height={150}
                                 alt="Picture of the author"
                                 priority={false}
-                                className="rounded-full"
+                                className="rounded-lg  justify-center items-center"
                             />
                         </div>
                     </div>
@@ -27,10 +27,12 @@ export default function Sidebar() {
                         <button className="btn btn-outline btn-wide btn-sm text-xs m-2 p-2 rounded-lg">Hire Me</button>
                     </div>
                 </div>
-                <div className="m-0 p-1 text-sm">
+                <div className="m-0 p-1 text-sm text-left">
                     <IconLinks />
                 </div>
             </div>
         </aside>
     )
 }
+
+export default Profile
