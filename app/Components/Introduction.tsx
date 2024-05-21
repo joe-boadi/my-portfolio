@@ -1,9 +1,9 @@
 
 const Introduction = () => {
     return (
-        <section id="portfolio">
+        <>
             <h1 className="text-3xl p-2 m-2 text-center"> My Portfolio </h1>
-            <div className="flex justify-center lg:w-4/5 border rounded-lg m-3 p-3">
+            <div className="flex justify-center w-auto border rounded-lg m-3 p-3" id="portfolio">
                 <p className="text-center justify-evenly text-sm">
                     <span className="font-extrabold text-2xl mb-2">👋 Hello, I am Joe</span> <br />
                     A passionate software engineer with nearly a year of professional experience. Armed with a BSc in Computer Science 
@@ -21,7 +21,7 @@ const Introduction = () => {
                     to life.
                 </p>
             </div>
-        </section>
+        </>
     )
 }
 

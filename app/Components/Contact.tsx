@@ -2,7 +2,7 @@ import Styles from '@/app/Styles/Contact.module.css'
 
 const Contact = () => {
     return (
-        <section id='contact' className={`${Styles.contactSection} text-sm sm:grid-cols-1 text-center mt-12 font-mono items-center border rounded-lg`}>
+        <section id='contact' className={`${Styles.contactSection} text-sm text-center mt-12 font-mono items-center border rounded-lg`}>
             <h2 className={`${Styles.h2} mb-6 text-base-content`}>Contact</h2>
             <form action={'#'} method='post' className={Styles.form}>
             {/* Form fields go here */}
@@ -18,5 +18,6 @@ const Contact = () => {
 
     )
 }
+
 export default Contact
 
