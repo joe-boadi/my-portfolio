@@ -1,5 +1,15 @@
+import React from "react";
+
 const HireMe = () => {
-    return
+
+    const onSubmit = () => {
+        return
+    }
+    
+    return(
+        <>
+        </>
+    )
 }
 
 export default HireMe

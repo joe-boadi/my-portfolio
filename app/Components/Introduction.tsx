@@ -1,11 +1,12 @@
+import React from "react"
 
 const Introduction = () => {
     return (
         <>
             <h1 className="text-3xl p-2 m-2 text-center"> My Portfolio </h1>
             <div className="flex justify-center w-auto border rounded-lg m-3 p-3" id="portfolio">
-                <p className="text-center justify-evenly text-sm">
-                    <span className="font-extrabold text-2xl mb-2">👋 Hello, I am Joe</span> <br />
+                <p className="text-center justify-evenly">
+                    <span className="font-extrabold text-2xl mb-2 font-mono">👋 Hello, I am Joe</span> <br />
                     A passionate software engineer with nearly a year of professional experience. Armed with a BSc in Computer Science 
                     and Engineering, my focus extends to the dynamic realms of information security and leveraging AI to fortify digital 
                     landscapes.

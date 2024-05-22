@@ -1,4 +1,5 @@
-import Styles from '@/app/Styles/Contact.module.css'
+import React from "react";
+import Styles from "@/app/Styles/Contact.module.css";
 
 const Contact = () => {
     return (
@@ -12,7 +13,7 @@ const Contact = () => {
                 <input className={`${Styles.input} bg-base-200`} type="email" name="email" id="email" placeholder='Email' required />
             </div>
             <textarea className={`${Styles.textarea} bg-base-200`} name="message" id='message' placeholder='Message required'></textarea>
-            <button className={`${Styles.button} btn btn-outline rounded-lg`} type="submit">Submit</button>
+            <button className={`${Styles.button} btn btn-outline`} type="submit">Submit</button>
             </form>
         </section>
 

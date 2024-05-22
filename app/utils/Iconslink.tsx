@@ -1,3 +1,4 @@
+import React from "react";
 import Link from 'next/link';
 import { BsBuildingFill } from 'react-icons/bs';
 import { GrLocationPin } from 'react-icons/gr';

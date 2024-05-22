@@ -1,4 +1,4 @@
-import Link from "next/link"
+import React from "react";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { DiJava, DiJavascript, DiMongodb, DiSqllite } from "react-icons/di";
 import { FaCss3, FaDiscord, FaGithub, FaHtml5, FaNodeJs, FaPython, FaSlack } from "react-icons/fa";
@@ -89,12 +89,12 @@ const stackIcons: StackLink[] = [
 const StackIcons = () => {
     return (
         <>
-            <h1 className="text-3xl p-2 m-2 text-center">Tools</h1>
-            <div className="flex justify-center md:grid-cols-3">
+            <h1 className="text-3xl p-2 text-center mb-0 mt-10">Tools</h1>
+            <div className="flex justify-center md:grid-cols-3 mt-0">
                 <div className="grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-4 mt-7 lg:w-4/5 md:w-4/5 border rounded-lg m-4 p-2">
                     {stackIcons.map((icon, index) => (
                         <div key={index} className="flex justify-center items-center">
-                            <div className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16">
+                            <div className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 cursor-pointer hover:text-green-400 ">
                                 {icon.icon}
                             </div>
                         </div>

@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 
 type NavLink = {
@@ -21,7 +22,7 @@ const NavLinks = () => {
         <div className="right-4 text-sm ml-auto">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
-              <div className="hover:underline m-2">{link.label}</div>
+              <div className="hover:text-green-500 hover:underline m-2">{link.label}</div>
             </Link>
           ))}
         </div>
