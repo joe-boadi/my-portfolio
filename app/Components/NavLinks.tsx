@@ -15,7 +15,7 @@ const navLinks: NavLink[] = [
 
 const NavLinks = () => {
   return (
-    <nav className="flex navbar fixed bg-base-300 bg-opacity-75 backdrop-blur-lg top-0 z-10 w-full p-3 font-mono">
+    <nav className="navbar fixed bg-base-300 bg-opacity-75 backdrop-blur-lg top-0 left-0 z-10 w-full p-3 font-mono">
         <header>
           <h1 className="left-0 font-extrabold text-2xl"><Link href="#">joe-boadi</Link></h1>
         </header>

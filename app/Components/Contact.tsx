@@ -2,6 +2,12 @@ import React from "react";
 import Styles from "@/app/Styles/Contact.module.css";
 
 const Contact = () => {
+    
+    // Handle form submission
+    const hireMe = () => {
+        return
+    }
+
     return (
         <section id='contact' className={`${Styles.contactSection} text-sm text-center mt-12 font-mono items-center border rounded-lg`}>
             <h2 className={`${Styles.h2} mb-6 text-base-content`}>Contact</h2>

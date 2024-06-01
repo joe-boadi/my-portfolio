@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const Profile = () => {
     return(
-        <aside className="sticky h-screen top-0 flex z-5 content mt-16 mr-0 pr-0 w-1/5 mx-28 p-2 bg-base-100 text-base-content text-center items-centers justify-center font-mono">
+        <aside className="sticky top-24 h-screen flex z-5 content mt-16 mr-0 pr-0 w-1/5 mx-28 p-2 bg-base-100 text-base-content text-center items-centers justify-center font-mono">
             <div>
                 <div>
                     <div>
