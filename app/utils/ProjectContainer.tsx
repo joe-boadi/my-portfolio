@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Recipe from '@/app/assets/images/KBM-cartoon.jpg'
 
 type Projects = {
     title: string;
@@ -12,10 +13,9 @@ type Projects = {
 }
 
 const projects: Projects[] = [
-
     { 
         title: "Recipe Whisperer",
-        imageURL: "https://",
+        imageURL:" Recipe",
         Description: "A recipe hub for delicious delicacies",
         Motivation: "For the fun of exploring foreign dishes and being adventurous while staying healthy",
         Stack: ["react.js", "tailwind CSS"],
@@ -51,15 +51,14 @@ const projects: Projects[] = [
         linkURL: "https://github.com/joe-boadi",
 
     },
-
 ]
 
 const ProjectDisplay = () => {
     return(
             <>
                 <h1 className="text-3xl p-2 m-2 text-center mt-10" id="projects">Projects</h1>
-                    {projects.map((project, index) => {
-                        <div key={index} className="border w-28 h-24 grid grid-cols-2 md:grid-flow-col items-center justify-center text-sm text-left mb-16">
+                {projects.map((project, index) => {
+                        <div className="border items-center justify-center mb-16 w-28 h-24 grid grid-cols-2 md:grid-flow-col text-sm text-left">
                             <div>
                                 <div>
                                     <Image
