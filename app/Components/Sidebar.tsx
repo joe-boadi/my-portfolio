@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const Profile = () => {
     return(
-        <aside className="sticky top-24 h-screen flex z-5 content mt-16 mr-0 pr-0 w-1/5 mx-28 p-2 bg-base-100 text-base-content text-center items-centers justify-center font-mono">
+        <aside className="flex flex-col md:flex-row sticky top-24 h-screen z-5 content mt-16 mr-0 pr-0 w-1/5 mx-28 p-2 bg-base-100 text-base-content text-center items-centers justify-center font-mono">
             <div>
                 <div>
                     <div>
@@ -26,7 +26,7 @@ const Profile = () => {
                         <p className="text-xs justify-between text-wrap">
                             Computer Sci. & Eng. || Technology & Security || Ex-Allied Health
                         </p>
-                        <Link href="#contact"><button className="btn btn-outline btn-wide btn-sm text-xs m-2 p-2 rounded-lg"> Hire Me</button></Link>
+                        <Link href="#contact"><button className="btn btn-outline btn-wide btn-sm text-xs m-2 p-2 rounded-lg hover:bg-green-400"> Hire Me</button></Link>
                     </div>
                 </div>
                 <div className="m-0 p-1 text-sm text-left">

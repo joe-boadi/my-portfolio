@@ -66,7 +66,7 @@ const IconLinks = () => (
           if (item.name !== 'Ghana' && item.name !== 'Software Developer/AI') {
             return (
               <Link key={index} href={item.link}>
-                <div className="flex p-1">
+                <div className="flex p-1  hover:underline hover:text-green-400">
                   {item.icon}
                   <span className="ml-2">{item.name}</span>
                 </div>

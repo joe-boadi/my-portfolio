@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectDisplay from "../utils/ProjectContainer";
 import StackIcons from "../utils/Tools";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import Introduction from "./Introduction";
 
 const Section = () =>{
@@ -9,8 +9,8 @@ const Section = () =>{
     return(
         <>
             <section id="profile w-4/5">
-                <div className="ml-0 pl-0 left-0 justify-center mt-16 m-1 lg:mx-3 font-mono object-fill overflow-y-auto">
-                    <div>
+                <div className="container flex md:flex-col ml-0 pl-0 left-0 justify-center mt-16 m-1 lg:mx-3 font-mono">
+                    <div className="w-full min-h-screen">
                         <Introduction />
                         <StackIcons />
                         <ProjectDisplay />
@@ -21,4 +21,5 @@ const Section = () =>{
         </>
     )
 }
+
 export default Section
