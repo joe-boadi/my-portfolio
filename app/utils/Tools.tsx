@@ -1,6 +1,6 @@
 import React from "react";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { DiJava, DiJavascript, DiMongodb, DiSqllite } from "react-icons/di";
+import { DiJava, DiJavascript, DiMongodb } from "react-icons/di";
 import { FaCss3, FaDiscord, FaGithub, FaHtml5, FaNodeJs, FaPython, FaSlack } from "react-icons/fa";
 import { FaGolang, FaTrello } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
@@ -91,7 +91,7 @@ const StackIcons = () => {
         <>
             <h1 className="text-3xl p-2 text-center mb-0 mt-10">Tools</h1>
             <div className="flex justify-center md:grid-cols-3 mt-0">
-                <div className="grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-4 mt-7 lg:w-4/5 md:w-4/5 border rounded-lg m-4 p-2">
+                <div className="grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-4 mt-7 lg:w-4/5 md:w-4/5 border rounded-lg m-4 p-5">
                     {stackIcons.map((icon, index) => (
                         <div key={index} className="flex justify-center items-center">
                             <div className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 cursor-pointer hover:text-green-400 ">
