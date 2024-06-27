@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import IconLinks from "../utils/Iconslink"
 import Link from "next/link"
+import Headshot from "@/app/assets/KBM-headshot.jpg"
 
 const Profile = () => {
     return(
@@ -11,7 +12,7 @@ const Profile = () => {
                     <div>
                         <div className="m-4 p-2 object-cover">
                             <Image
-                                src="/images/KBM-headshot.jpg"
+                                src={Headshot}
                                 width={200}
                                 height={200}
                                 alt="Picture of the author"
