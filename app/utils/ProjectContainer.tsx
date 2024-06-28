@@ -1,89 +1,97 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Recipe from '@/app/assets/images/KBM-cartoon.jpg'
+import recipe from "@/app/assets/heroImage.png";
+import password from "@/app/assets/passGen.png";
+import meme from "@/app/assets/meme.jpg";
+import realEstate from "@/app/assets/luxury-residential-real-estate.png";
+import style from "@/app/Styles/styles.module.css";
+import { FaArrowRight } from "react-icons/fa";
 
 type Projects = {
-    title: string;
-    imageURL: string;
-    Description: string;
-    Motivation: string;
-    Stack: Array<string>;
-    linkURL: string;
-}
-
-const projects: Projects[] = [
-    { 
-        title: "Recipe Whisperer",
-        imageURL:" Recipe",
-        Description: "A recipe hub for delicious delicacies",
-        Motivation: "For the fun of exploring foreign dishes and being adventurous while staying healthy",
-        Stack: ["react.js", "tailwind CSS"],
-        linkURL: "https://github.com/joe-boadi",
-    },
-
-    {
-        title: "Password Generator",
-        imageURL: "./passGen.png",
-        Description: "A web-app for generating random and strong passwords without hustle",
-        Motivation: "The hassle of generating a good and strong passwords",
-        Stack: ["Next.js", "Pure CSS-5","tailwind CSS"],
-        linkURL: "https://github.com/joe-boadi",
-
-    },
-
-    {
-        title: "Meme Generator",
-        imageURL: "./passGen.png",
-        Description: "A web-app for generating random and funny memes for laughs",
-        Motivation: "The recent popularity of memes and the satisfaction in communication",
-        Stack: ["react.js", "Pure CSS-5","tailwind CSS"],
-        linkURL: "https://github.com/joe-boadi",
-
-    },
-
-    {
-        title: "Real Estate Listing",
-        imageURL: "./passGen.png",
-        Description: "A template-app for checking real estate listings",
-        Motivation: "The comfort of owning a property in real estate with a few clicks",
-        Stack: ["react.js", "Pure CSS-5","tailwind CSS"],
-        linkURL: "https://github.com/joe-boadi",
-
-    },
-]
+  title: string;
+  imageURL: any;
+  Description: string;
+  Motivation: string;
+  Stack: Array<string>;
+  linkURL: string;
+};
 
 const ProjectDisplay = () => {
-    return(
-            <>
-                <h1 className="text-3xl p-2 m-2 text-center mt-10" id="projects">Projects</h1>
-                {projects.map((project, index) => {
-                        <div className="border items-center justify-center mb-16 w-28 h-24 grid grid-cols-2 md:grid-flow-col text-sm text-left">
-                            <div>
-                                <div>
-                                    <Image
-                                        alt="Project Image"
-                                        src={project.imageURL}
-                                        width={200}
-                                        height={150}
-                                        priority={false}
-                                    />
-                                    <div className="items-center justify-center text-center">
-                                        <h2 className="underline">{project.title}</h2>
-                                        <Link href={project.linkURL}>Visit this link</Link>
-                                        <p className="italic">{project.Description}</p>
-                                        <p className="">{project.Motivation}</p>
-                                        <ol>{project.Stack.map((tech, i) =>(
-                                            <li key={i}>{tech}</li>
-                                            ))}
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    })}
-            </>
-    )
-}
+  const projects: Projects[] = [
+    {
+      title: "Recipe Whisperer",
+      imageURL: recipe,
+      Description: "A recipe hub for delicious delicacies",
+      Motivation: "(Data Fetching)",
+      Stack: ["react.js"],
+      linkURL: "https://github.com/joe-boadi",
+    },
+    {
+      title: "Password Generator",
+      imageURL: password,
+      Description: "A web-app for generating random and strong passwords",
+      Motivation: "",
+      Stack: ["Next.js"],
+      linkURL: "https://password-generator-app-kohl-ten.vercel.app/",
+    },
+    {
+      title: "Meme Generator",
+      imageURL: meme,
+      Description: "A web-app for generating random and funny memes for laughs",
+      Motivation: "",
+      Stack: ["react.js"],
+      linkURL: "https://github.com/joe-boadi",
+    },
+    {
+      title: "Real Estate Listing",
+      imageURL: realEstate,
+      Description: "Browse real estate listings",
+      Motivation: "(CRUD, Fullstack development)",
+      Stack: ["Next.js",],
+      linkURL: "https://github.com/joe-boadi",
+    },
+  ];
 
-export default ProjectDisplay
+  return (
+    <>
+      <h1 className="text-3xl p-2 m-2 text-center mt-10" id="projects">
+        Projects
+      </h1>
+      <div className={`${style.project_container} relative overflow-hidden bottom-9`}>
+        <div className={`${style.projects} flex overflow-x-auto space-x-4 p-4 snap-x snap-mandatory`}>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="border rounded-lg flex-shrink-0 w-72 p-4 flex flex-col items-center justify-center snap-center"
+            >
+              <Image
+                alt={project.title}
+                src={project.imageURL}
+                width={200}
+                height={200}
+                priority={false}
+                className="rounded-badge"
+              />
+              <div className="text-center p-4">
+                <Link href={project.linkURL} className=" hover:underline hover:text-green-600">
+                    <h2 className="text-lg text-green-500 mb-2">{project.title}</h2>
+                </Link>
+                <p className="italic mt-2">{project.Description}</p>
+                <p className="mt-2">{project.Motivation}</p>
+                <ol className="list-disc list-inside mt-2">
+                  {project.Stack.map((tech, i) => (
+                    <li key={i}>{tech}</li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className={`${style.fade_right} absolute top-0 right-0 h-1/2 w-16 bg-gradient-to-l pointer-events-none`}></div>
+      </div>
+    </>
+  );
+};
+
+export default ProjectDisplay;
