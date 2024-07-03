@@ -1,5 +1,5 @@
 .contactSection{
-	max-width: 80%;
+	max-width: 90%;
 	padding: 3rem 0 6rem 0;
 	position: relative;
 	margin: auto;
@@ -29,7 +29,7 @@
 }
 
 .inputGroup{
-	display: flex;
+	display: block;
 	justify-content: space-between;
 	margin: 0 auto 1rem;
 	width:80%;
@@ -48,7 +48,10 @@
 
 .inputGroup input[type="text"],
 .inputGroup input[type="email"]{
-	width: 50%;
+	width: 100%;
+	display: block;
+	align-items: center;
+	justify-content: center;
 }
 
 .textarea{
