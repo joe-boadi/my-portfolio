@@ -61,3 +61,6 @@ const NavLinks = () => {
 };
 
 export default NavLinks;
+
+// TODO:
+// Add CV/Resume(downloadable) button in navbar
