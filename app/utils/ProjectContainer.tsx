@@ -6,7 +6,7 @@ import password from "@/app/assets/passGen.png";
 import meme from "@/app/assets/meme.jpg";
 import realEstate from "@/app/assets/luxury-residential-real-estate.png";
 import style from "@/app/Styles/styles.module.css";
-import { FaArrowRight } from "react-icons/fa";
+import Smartwatch from "@/app/assets/swatch.jpg"
 
 type Projects = {
   title: string;
@@ -20,14 +20,6 @@ type Projects = {
 const ProjectDisplay = () => {
   const projects: Projects[] = [
     {
-      title: "Recipe Whisperer",
-      imageURL: recipe,
-      Description: "A recipe hub for delicious delicacies",
-      Motivation: "(Data Fetching)",
-      Stack: ["react.js"],
-      linkURL: "https://github.com/joe-boadi",
-    },
-    {
       title: "Password Generator",
       imageURL: password,
       Description: "A web-app for generating random and strong passwords",
@@ -35,14 +27,25 @@ const ProjectDisplay = () => {
       Stack: ["Next.js"],
       linkURL: "https://password-generator-app-kohl-ten.vercel.app/",
     },
+
     {
-      title: "Meme Generator",
-      imageURL: meme,
-      Description: "A web-app for generating random and funny memes for laughs",
-      Motivation: "",
+      title: "Bluetooth Intrusion Detection in Wearables",
+      imageURL: Smartwatch,
+      Description: "A AI/ML algorithm to protect against cyber criminals",
+      Motivation: "The increasing usage of smart watches and the security concerns",
+      Stack: ["Python and ML libraries/models"],
+      linkURL: "https://github.com/joe-boad",
+    },
+
+    {
+      title: "Recipe Whisperer",
+      imageURL: recipe,
+      Description: "A recipe hub for delicious delicacies",
+      Motivation: "(API/Data Fetching)",
       Stack: ["react.js"],
       linkURL: "https://github.com/joe-boadi",
     },
+
     {
       title: "Real Estate Listing",
       imageURL: realEstate,
@@ -51,11 +54,20 @@ const ProjectDisplay = () => {
       Stack: ["Next.js",],
       linkURL: "https://github.com/joe-boadi",
     },
+
+    {
+      title: "Meme Generator",
+      imageURL: meme,
+      Description: "A web-app for generating random and funny memes for laughs",
+      Motivation: "",
+      Stack: ["react.js"],
+      linkURL: "https://github.com/joe-boadi",
+    },
   ];
 
   return (
     <>
-      <h1 className="text-3xl p-2 m-2 text-center mt-10" id="projects">
+      <h1 id="project" className="text-3xl p-2 text-center mt-10 mb-4">
         Projects
       </h1>
       <div className={`${style.project_container} relative overflow-hidden bottom-9`}>
@@ -63,7 +75,7 @@ const ProjectDisplay = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border rounded-lg flex-shrink-0 w-72 p-4 flex flex-col items-center justify-center snap-center"
+              className="border rounded-lg flex-shrink-0 w-72 p-4 flex flex-col items-center justify-center snap-center hover:bg-base-300"
             >
               <Image
                 alt={project.title}
@@ -73,7 +85,7 @@ const ProjectDisplay = () => {
                 priority={false}
                 className="rounded-badge"
               />
-              <div className="text-center p-4">
+              <div className="text-center p-4 text-sm">
                 <Link href={project.linkURL} className=" hover:underline hover:text-green-600">
                     <h2 className="text-lg text-green-500 mb-2">{project.title}</h2>
                 </Link>
@@ -88,7 +100,6 @@ const ProjectDisplay = () => {
             </div>
           ))}
         </div>
-        <div className={`${style.fade_right} absolute top-0 right-0 h-1/2 w-16 bg-gradient-to-l pointer-events-none`}></div>
       </div>
     </>
   );
