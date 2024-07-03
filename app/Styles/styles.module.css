@@ -16,13 +16,5 @@
     flex: none;
     scroll-snap-align: center;
   }
-  
-  .fade_right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 2rem;
-    background: linear-gradient(to left, rgb(103, 147, 136), rgba(160, 233, 156, 0));
-  }
+
   
