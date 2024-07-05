@@ -24,38 +24,21 @@ const NavLinks = () => {
   }
 
   return (
-    <nav className="navbar sticky container mx-auto p-6 bg-base-300 bg-opacity-75 backdrop-blur-lg top-0 left-0 z-10 font-mono">
-      <div className='flex px-4 mx-auto relative'>
+    <nav className="sticky container font-mono max-w-full top-0 left-0 z-10 m-auto p-6 bg-base-300 bg-opacity-75 backdrop-blur-lg">
+      <div className='flex mx-auto relative'>
         <div className="flex justify-between items-center">
-          <header className='pt-2'>
+          <header className=''>
             <h1 className="flex font-extrabold text-2xl hover:text-green-400"><Link href="#">joe-boadi</Link></h1>
           </header>
-          <div className="hidden md:flex space-x-6 md: ml-16 pl-16 font-bold right-4 text-sm">
+          <div className="hidden md:flex space-x-6 md: ml-16 pl-16 font-bold text-sm">
             {navLinks.map((link, index) => (
               <Link key={link.href} href={link.href}>
                 <div className="hover:text-green-500 hover:underline m-2">{link.label}</div>
               </Link>
             ))}
           </div>
-          <div className='lg:hidden md:flex-col justify-end'>
-              <button onClick={toggleNavbar}>
-                  {mobileDrawerOpen ? <AiOutlineClose className='text-2xl font-bold' /> : <CgMenu className="text-2xl font-bold" />}
-              </button>
-          </div>
         </div>
-            {mobileDrawerOpen && (
-              <div className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden md:hidden bg-opacity-75 backdrop-blur-lg">
-              <ul>
-                {navLinks.map((link, index) => (
-                  <Link key={link.href} href={link.href}>
-                      <li className='hover:text-green-500 hover:underline active:text-green-400 active:underline'>{link.label}</li>
-                  </Link>
-                ))}
-              </ul>
-          </div>
-            )}
       </div>
-        
     </nav>
   );
 };
