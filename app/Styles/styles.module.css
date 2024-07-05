@@ -1,15 +1,18 @@
 
 .project_container {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    bottom: 20px;
+    max-width: 90%;
+    margin: 0 auto;
   }
   
   .projects {
     display: flex;
-    overflow-x: auto;
+    padding: 1rem;
     scroll-snap-type: x mandatory;
+  }
+
+  .projects::-webkit-scrollbar{
+    display: none;
   }
   
   .projects > div {

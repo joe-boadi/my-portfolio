@@ -4,7 +4,7 @@ import Image from "next/image";
 import recipe from "@/app/assets/heroImage.png";
 import password from "@/app/assets/passGen.png";
 import meme from "@/app/assets/meme.jpg";
-import realEstate from "@/app/assets/luxury-residential-real-estate.png";
+import realEstate from "@/app/assets/RoofScout_Reimagined.jpg";
 import style from "@/app/Styles/styles.module.css";
 import Smartwatch from "@/app/assets/swatch.jpg"
 
