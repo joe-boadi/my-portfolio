@@ -9,21 +9,11 @@
     text-align: center;
     font-size: 32px;
 }
-
-.contactSection .span{
-	width: 1rem;
-}
-
-.contactSection::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+.form {
 	bottom: 0;
 }
 
-.form,.contactSection .h2{
+.form, .contactSection .h2{
 	position: relative;
 	z-index: 2;
 }
@@ -38,7 +28,7 @@
 .input[type="text"], 
 .input[type="email"],
 .textarea{
-	width:100%;
+	max-width:100%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
