@@ -25,7 +25,7 @@ const ProjectDisplay = () => {
       Description: "AI/ML algorithm to protect against cyber criminals for wearables",
       Motivation: "",
       Stack: [],
-      linkURL: "https://github.com/joe-boad",
+      linkURL: "https://github.com/joe-boadi/smartwatch-anomaly-detection",
     },
 
     {
@@ -43,7 +43,7 @@ const ProjectDisplay = () => {
       Description: "A recipe hub for delicious delicacies",
       Motivation: "(API/Data Fetching)",
       Stack: [],
-      linkURL: "https://github.com/joe-boadi",
+      linkURL: "https://github.com/joe-boadi/recipe-web-app.git",
     },
 
     {
@@ -52,7 +52,7 @@ const ProjectDisplay = () => {
       Description: "Browse real estate listings",
       Motivation: "(CRUD, Fullstack development)",
       Stack: [],
-      linkURL: "https://github.com/joe-boadi",
+      linkURL: "https://real-estate-listing-beta.vercel.app/",
     },
 
     {
@@ -61,7 +61,7 @@ const ProjectDisplay = () => {
       Description: "A web-app for generating random and funny memes for laughs",
       Motivation: "",
       Stack: [],
-      linkURL: "https://github.com/joe-boadi",
+      linkURL: "https://github.com/joe-boadi/meme-generator",
     },
   ];
 
