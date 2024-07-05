@@ -69,17 +69,14 @@ const stackIcons: StackLink[] = [
         icon: <FaGithub className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16" />,
         name: "Github"
     },
-
     {
         icon: <BiLogoPostgresql className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16" />,
         name: "Postgresql"
     },
-
     {
         icon: <DiMongodb className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16" />,
         name: "MongoDB"
     },
-
     {
         icon: <DiJava className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16" />,
         name: "Java"
