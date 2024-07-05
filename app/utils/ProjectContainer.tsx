@@ -20,21 +20,21 @@ type Projects = {
 const ProjectDisplay = () => {
   const projects: Projects[] = [
     {
+      title: "Bluetooth Intrusion Detection",
+      imageURL: Smartwatch,
+      Description: "AI/ML algorithm to protect against cyber criminals for wearables",
+      Motivation: "",
+      Stack: [],
+      linkURL: "https://github.com/joe-boad",
+    },
+
+    {
       title: "Password Generator",
       imageURL: password,
       Description: "A web-app for generating random and strong passwords",
       Motivation: "",
-      Stack: ["Next.js"],
+      Stack: [],
       linkURL: "https://password-generator-app-kohl-ten.vercel.app/",
-    },
-
-    {
-      title: "Bluetooth Intrusion Detection in Wearables",
-      imageURL: Smartwatch,
-      Description: "A AI/ML algorithm to protect against cyber criminals",
-      Motivation: "The increasing usage of smart watches and the security concerns",
-      Stack: ["Python and ML libraries/models"],
-      linkURL: "https://github.com/joe-boad",
     },
 
     {
@@ -42,7 +42,7 @@ const ProjectDisplay = () => {
       imageURL: recipe,
       Description: "A recipe hub for delicious delicacies",
       Motivation: "(API/Data Fetching)",
-      Stack: ["react.js"],
+      Stack: [],
       linkURL: "https://github.com/joe-boadi",
     },
 
@@ -51,7 +51,7 @@ const ProjectDisplay = () => {
       imageURL: realEstate,
       Description: "Browse real estate listings",
       Motivation: "(CRUD, Fullstack development)",
-      Stack: ["Next.js",],
+      Stack: [],
       linkURL: "https://github.com/joe-boadi",
     },
 
@@ -60,28 +60,28 @@ const ProjectDisplay = () => {
       imageURL: meme,
       Description: "A web-app for generating random and funny memes for laughs",
       Motivation: "",
-      Stack: ["react.js"],
+      Stack: [],
       linkURL: "https://github.com/joe-boadi",
     },
   ];
 
   return (
     <>
-      <h1 id="project" className="text-3xl p-2 text-center mt-10 mb-4">
+      <h1 id="project" className="text-3xl p-2 text-center mt-10 mb-10">
         Projects
       </h1>
-      <div className={`${style.project_container} relative overflow-hidden bottom-9`}>
-        <div className={`${style.projects} flex overflow-x-auto space-x-4 p-4 snap-x snap-mandatory`}>
+      <div className={`${style.project_container} container relative overflow-hidden bottom-9`}>
+        <div className={`${style.projects} flex overflow-x-auto space-x-4 p-4 snap-center snap-x snap-mandatory`}>
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border rounded-lg flex-shrink-0 w-72 p-4 flex flex-col items-center justify-center snap-center hover:bg-base-300"
+              className="border container rounded-lg w-72 h-80 p-4 flex flex-col items-center justify-center snap-center hover:bg-base-300"
             >
               <Image
                 alt={project.title}
                 src={project.imageURL}
-                width={200}
-                height={200}
+                width={150}
+                height={150}
                 priority={false}
                 className="rounded-badge"
               />
