@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { AiOutlineClose } from 'react-icons/ai';
-import { CgMenu } from 'react-icons/cg';
+import Logo from "@/app/assets/logo.png"
+import Image from 'next/image';
 
 type NavLink = {
   href: string;
@@ -24,11 +24,18 @@ const NavLinks = () => {
   }
 
   return (
-    <nav className="sticky container font-mono max-w-full top-0 left-0 z-10 m-auto p-6 bg-base-300 bg-opacity-75 backdrop-blur-lg">
-      <div className='flex mx-auto relative'>
+    <nav className="sticky container font-mono max-w-full top-0 left-0 z-10 m-auto p-6 pb-2 bg-base-300 bg-opacity-75 backdrop-blur-lg">
+      <div className='flex mx-auto relative justify-center'>
         <div className="flex justify-between items-center">
-          <header className=''>
-            <h1 className="flex font-extrabold text-2xl hover:text-green-400"><Link href="#">joe-boadi</Link></h1>
+          <header className='flex'>
+            <Image
+              width={50}
+              height={50}
+              src={Logo} alt={'Logo'}
+              className='flex rounded-lg m-auto mr-5 cursor-pointer'
+              id='#'
+              />
+            <h1 className="font-extrabold text-2xl hover:text-green-400"><Link href="#">joe-boadi</Link></h1>
           </header>
           <div className="hidden md:flex space-x-6 md: ml-16 pl-16 font-bold text-sm">
             {navLinks.map((link, index) => (
