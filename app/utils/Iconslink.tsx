@@ -24,11 +24,6 @@ const iconLinks: IconLink[] = [
     name: 'Ghana',
   },
   {
-    icon: <RiTwitterFill />,
-    link: 'https://www.x.com/joeboadiDev_',
-    name: 'X',
-  },
-  {
     icon: <RiLinkedinFill />,
     link: 'https://www.linkedin.com/in/kwadjo-boadi-mantey-43b670271/',
     name: 'LinkedIn',
@@ -37,6 +32,11 @@ const iconLinks: IconLink[] = [
     icon: <RiGithubFill />,
     link: 'https://github.com/joe-boadi',
     name: 'Github',
+  },
+  {
+    icon: <RiTwitterFill />,
+    link: 'https://www.x.com/joeboadiDev_',
+    name: 'X',
   },
 ];
 
