@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # assets
-.png
-.jpg
+/.png
+/.jpg
