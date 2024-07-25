@@ -36,7 +36,7 @@ const Contact = () => {
     }
 
     return (
-        <section id='contact' className={`${Styles.contactSection} text-sm text-center mt-12 font-mono items-center border rounded-lg hover:bg-base-300 bottom-6`}>
+        <section id='contact' className={`${Styles.contactSection} transform scale-90 text-sm text-center mt-12 font-mono items-center border rounded-lg hover:bg-base-300 bottom-6`}>
             <h2 className={`${Styles.h2} mb-6 text-base-content`}>Contact</h2>
             <form action={'#'} method='post' onSubmit={handleSubmit} className={`${Styles.form}`}>
                 {/* Form fields go here */}
