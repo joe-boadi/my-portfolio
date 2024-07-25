@@ -2,7 +2,7 @@ import React from "react"
 
 const Introduction = () => {
     return (
-        <div className="border rounded-lg mt-7 p-3 text-center items-center" id="portfolio">
+        <div className="border rounded-lg mt-7 p-3 text-center items-center transform scale-x-[85%]" id="portfolio">
             <div className="relative font-mono">
                 <p className="absolute text-2xl w-full">👋 Hello, I am <span className="text-green-500"> Joe</span></p> <br />
                 <br />
@@ -12,8 +12,7 @@ const Introduction = () => {
                     </li>
 
                     <li>Armed with BSc <span className="text-green-500"> Computer Science and Engineering</span></li>  
-                    <li>My focus extends to the dynamic realms of <span className="text-green-500">information security</span> and leveraging 
-                        <span className="text-green-500"> AI</span> to fortify digital landscapes.
+                    <li>My focus extends to the dynamic realms of <span className="text-green-500">information security</span>, and leveraging <span className="text-green-500"> AI</span> to fortify digital landscapes.
                     </li>
 
                     <li>
