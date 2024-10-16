@@ -78,7 +78,4 @@ const IconLinks = () => (
       </div>
     </>
   );
-
-  
-
 export default IconLinks;

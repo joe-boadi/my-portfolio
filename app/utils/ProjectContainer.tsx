@@ -25,7 +25,7 @@ const ProjectDisplay = () => {
       Description: "AI/ML algorithm to protect against cyber criminals for wearables",
       Motivation: "",
       Stack: [],
-      linkURL: "https://github.com/joe-boadi/smartwatch-anomaly-detection",
+      linkURL: "https://github.com/joe-boadi/bluetooth-intrusion-detection",
     },
 
     {
@@ -52,7 +52,7 @@ const ProjectDisplay = () => {
       Description: "Browse real estate listings",
       Motivation: "(CRUD, Fullstack development)",
       Stack: [],
-      linkURL: "https://real-estate-listing-beta.vercel.app/",
+      linkURL: "https://github.com/joe-boadi/real-estate-listing",
     },
 
     {

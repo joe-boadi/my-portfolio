@@ -6,8 +6,8 @@ import Headshot from "@/app/assets/KBM-headshot.jpg"
 
 const Profile = () => {
     return(
-        <aside className="sticky h-screen top-1 flex flex-col text-base-content text-center items-center justify-center font-mono md:flex-row w-34 z-5 mt-16 mr-2 mt-1 mx-28 bg-base-100 transform scale-75">
-            <div className="top-0 mt-0 left-0 flex-shrink">
+        <aside className="sticky h-screen top-0 flex flex-col text-base-content text-center items-center justify-center font-mono md:flex-row w-34 z-5 mt-16 mr-2 mx-28 bg-base-100 transform scale-90">
+            <div className="top-0 left-0 flex-shrink">
                 <div>
                     <div>
                         <div className="m-4 p-2 object-cover">
