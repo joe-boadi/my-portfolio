@@ -3,9 +3,7 @@ import Sections from "./Components/Sections";
 
 const Home = () => {
   return (
-      <>
         <Sections />
-      </>
   );
 }
 
