@@ -2,7 +2,7 @@ import React from "react"
 
 const Introduction = () => {
     return (
-        <div className="border rounded-lg mt-7 p-3 text-center items-center transform scale-x-[85%]" id="portfolio">
+        <div className="sm:hidden lg:block border rounded-lg mt-7 p-3 text-center items-center transform scale-x-[85%]" id="portfolio">
             <div className="relative font-mono">
                 <p className="absolute text-2xl w-full">👋 Hello, I am <span className="text-green-500"> Joe</span></p> <br />
                 <br />
