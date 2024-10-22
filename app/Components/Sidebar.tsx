@@ -37,5 +37,4 @@ const Profile = () => {
         </aside>
     )
 }
-
 export default Profile
