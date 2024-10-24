@@ -3,12 +3,13 @@ import Image from "next/image"
 import IconLinks from "../utils/Iconslink"
 import Link from "next/link"
 import Headshot from "@/app/assets/KBM-headshot.jpg"
+import test from "@/app/Styles/test.module.css"
 
 const Profile = () => {
     return(
-        <aside className="sticky h-screen top-0 flex flex-col text-base-content text-center items-center justify-center font-mono md:flex-row w-34 z-5 mt-16 mr-2 mx-28 bg-base-100 transform scale-90">
-            <div className="top-0 left-0 flex-shrink">
-                <div>
+        <aside className={`${test.aside} sticky h-screen top-0  flex flex-col text-base-content text-center items-center justify-center font-mono md:flex-row w-34 z-5 mr-2 mx-28 bg-base-100 transform `}>
+            <div className="relative bottom-6 left-0 flex-shrink">
+                <div className="">
                     <div>
                         <div className="m-4 p-2 object-cover">
                             <Image
